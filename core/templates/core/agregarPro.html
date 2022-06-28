@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <title>AGREGAR PRODUCTO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="{% static 'core/css/estilo2.css'%}">
+</head>
+
+<header>
+    <div>
+        <h1>AMIGOS PELUDOS</h1>
+    </div>
+    <nav>
+        <a href="{% url 'home' %}">INICIO</a>
+        <a href="{% url 'home' %}">SOBRE NOSOTROS</a>
+        <a href="{% url 'home' %}">CONTACTO</a>
+    </nav>
+</header>
+
+<body>
+    <section id="cuerpo">
+        <a href="{% url 'AgregarPro' %}">Agregar Productos</a>
+        <a href="{% url 'AgregarCat' %}">Agregar Categoria</a>
+    </section>
+    <footer id="contacto">
+
+        <div>
+            <p>¿tienes dudas o quieres preguntar por algún producto? ¡Puedes contactarte con nosotros en estos números o en nuestras redes sociales!</p>
+            <section id="numero">
+                <div>+569-32823020</div>
+                <div>+569-31288037</div>
+            </section>
+        </div>
+        <div>
+
+        </div>
+    </footer>
+</body>
+</html>
